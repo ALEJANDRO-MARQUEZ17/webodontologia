@@ -15,13 +15,13 @@ if($_SESSION['us_tipo']==1){
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="../css/fonts/fonts.css">
+            <link rel="stylesheet" type="text/css" href="/webodontologia/css/fonts/fonts.css">
             <!-- Font Awesome -->
             <link rel="stylesheet" type="text/css" href="/webodontologia/css/fontawesome-free-6.6.0-web/css/all.min.css">
             <!-- Theme style -->
             <link rel="stylesheet" type="text/css" href="/webodontologia/css/adminlte.min.css">
         </head>
-        <body class="sidebar-mini layout-navbar-fixed layout-fixed sidebar-collapse layout-footer-fixed accent-lightblue" style="height: auto;">
+        <body class="sidebar-mini layout-navbar-fixed layout-fixed sidebar-collapse layout-footer-fixed accent-lightblue" >
             <!-- Site wrapper -->
             <div class="wrapper">
                 <!-- Navbar -->

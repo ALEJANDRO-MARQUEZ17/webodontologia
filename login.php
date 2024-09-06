@@ -18,7 +18,7 @@
             <img src="/webodontologia/img/bg.svg" alt="">
         </div>
         <div class="contenido-login">
-            <form action="">
+            <form action="/webodontologia/controlador/logincontroller.php" method="post">
                 <img class="logo" src="/webodontologia/img/logo.png" alt="">
                 <h2>ODONTOLOGIA</h2>
                 <div class="input-div ci">
