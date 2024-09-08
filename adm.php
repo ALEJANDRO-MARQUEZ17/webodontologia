@@ -48,12 +48,40 @@ if($_SESSION['us_tipo']==1){
                     </div>
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <li class="nav-header">SUBTITULOS</li>
+                        <li class="nav-header">PACIENTES</li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-image"></i>
                                 <p>
-                                MODULO
+                                lista de pacientes
+                                </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                agregar paciente
+                                </p>
+                                </a>
+                            </li>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-header">DOCTORES</li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                lista de doctores
+                                </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                agregar doctor
                                 </p>
                                 </a>
                             </li>
