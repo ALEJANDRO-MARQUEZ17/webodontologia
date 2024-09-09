@@ -1,10 +1,3 @@
-
-<?php
-/*
-session_start();
-if($_SESSION['us_tipo']==1){
-*/
-?>
 <!DOCTYPE html>
 <html lang="es" class="" style="height: auto;">
     <head>
@@ -20,6 +13,10 @@ if($_SESSION['us_tipo']==1){
         <!-- Theme style -->
         <link rel="stylesheet" href="/webodontologia/css/adminlte.min.css">
     </head>
+<?php /*
+session_start();
+if($_SESSION['us_tipo']==1){*/
+?>
     <body class="sidebar-mini dark-mode layout-navbar-fixed layout-fixed layout-footer-fixed accent-lightblue sidebar-collapse" style="height: auto;">
         <div class="wrapper">
             <nav class="main-header navbar navbar-expand border-bottom-0 navbar-light bg-lightblue">
@@ -28,8 +25,13 @@ if($_SESSION['us_tipo']==1){
                         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="/webodontologia/adm.php" class="nav-link">Home</a>
+                        <a href="/webodontologia/vista/adm.php" class="nav-link">Home</a>
                     </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    
+                        <a href="/webodontologia/controlador/logOut.php" style="color: white">Cerrrar Sesion</a>
+                    
                 </ul>
             </nav>
             <aside class="main-sidebar elevation-4 sidebar-light-lightblue">
@@ -51,7 +53,7 @@ if($_SESSION['us_tipo']==1){
                         <li class="nav-header">PACIENTES</li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
+                                <i class="fa-solid fa-user-doctor"></i>
                                 <p>
                                 lista de pacientes
                                 </p>
@@ -62,26 +64,6 @@ if($_SESSION['us_tipo']==1){
                                 <i class="nav-icon far fa-image"></i>
                                 <p>
                                 agregar paciente
-                                </p>
-                                </a>
-                            </li>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <li class="nav-header">DOCTORES</li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                lista de doctores
-                                </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                agregar doctor
                                 </p>
                                 </a>
                             </li>
@@ -101,10 +83,9 @@ if($_SESSION['us_tipo']==1){
         <script src="/webodontologia/js/adminlte.min.js"></script>
     </body>
 </html>
-<?php
-/*
+<?php /*
 }
 else{
-header('Location: ../vista/login.php');
-*/
+    header('Location: /webodontologia/vista/login.php');
+}*/
 ?>

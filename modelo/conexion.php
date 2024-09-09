@@ -2,7 +2,7 @@
 class Conexion(
     private $servidor = "localhost";
     private $db = "odontologiasistema";
-    private $ = 3306;
+    private $puerto = 3306;
     private $charset = "utf8";
     private $usuario = "root";
     private $contrasena = "";

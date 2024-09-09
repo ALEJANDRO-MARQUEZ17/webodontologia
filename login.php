@@ -13,6 +13,14 @@
     <link rel="stylesheet" type="text/css" href="/webodontologia/css/style.css">
     <link rel="stylesheet" type="text/css" href="/webodontologia/css/fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
+<?php
+session_start();
+    if(!empty($_SESSION['us_tipo'])){
+        header('Location: /webodontologia/controlador/loginController.php');
+    }
+    else{
+        session_destroy();
+?>
 <body>
     <img class="wave" src="/webodontologia/img/wave.png" alt="">
     <div class="contenedor">
@@ -20,7 +28,7 @@
             <img src="/webodontologia/img/bg.svg" alt="">
         </div>
         <div class="contenido-login">
-            <form action="/webodontologia/controlador/logincontroller.php" method="post">
+            <form action="/webodontologia/controlador/medico.php" method="post">
                 <img class="logo" src="/webodontologia/img/logo.png" alt="">
                 <h2>ODONTOLOGIA</h2>
                 <div class="input-div ci">
@@ -50,3 +58,6 @@
 </body>
 <script src="/webodontologia/js/login.js"></script>
 </html>
+<?php
+    }
+?>
